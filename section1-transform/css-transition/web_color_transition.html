@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #202430;
+        }
+        .title{
+            text-align: right;
+            overflow: hidden;
+        }
+        .title h1{ font-size: 300%; 
+            color: #fff; 
+            margin-top: 30px; 
+            margin-right: 30px; 
+            margin-bottom: 0px; 
+            padding: 0px;
+        }
+        .title p{
+            color: #6A7183; 
+            font-size: medium; 
+            margin-top: 10px; 
+            margin-right: 30px; 
+            padding: 0px;
+        }
+        .box_container{
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+           position: relative;
+           margin: 30px;
+           text-align: center;
+           transition: 2s;
+        }
+        .box_container span{
+            color: #fff; 
+            font-size: large;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .box_container p{
+            color: #6A7183; 
+            font-size: small;
+        }
+        .box span{
+            display: inline-block;
+        }
+        .color_box1{
+            width: 180px;
+            height: 180px;
+            border-radius: 10%;
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+            background: linear-gradient(60deg, #F54B64, #F78361);
+            transition: all 1.5s;
+        }
+        .color_box1:hover {
+            transform: scale(1.2);
+        }
+        .color_box2{
+            background-color: #242a38;
+            width: 180px;
+            height: 180px;
+            border-radius: 10%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: all 1.5s;
+        }
+        .color_box2:hover {
+            transform: scale(1.5) rotate(180deg) ;
+        }
+        .color_box3{
+            background-color: #4E586E;
+            width: 180px;
+            height: 180px;
+            border-radius: 10%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .color_box3:hover {
+            transform: scale(1.2);
+        }
+        .color_box4{
+            background-color: #fff;
+            width: 180px;
+            height: 180px;
+            border-radius: 10%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: all 1.5s;
+        }
+        .color_box4:hover {
+            transform: scale(1.2) rotate(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>Color Palette</h1>
+        <p>The colors are picked carefully to mush<br/>flat asthetic of the App Design.</p>
+    </div>
+    <div class="box_container">
+        <div class="box">
+            <div class="color_box1"></div>
+            <span>Primary</span>
+            <p>#F54B64<br/>#F78361</p>
+        </div>
+        <div class="box">
+            <div class="color_box2"></div>
+            <span>Secondary</span>
+            <p>#242A38</p>
+        </div>
+        <div class="box">
+            <div class="color_box3"></div>
+            <span>Dark_Grey</span>
+            <p>#4E586E</p>
+        </div>
+        <div class="box">
+            <div class="color_box4"></div>
+            <span>White</span>
+            <p>#FFFFFF</p>
+        </div>
+    </div>
+</body>
+</html>
