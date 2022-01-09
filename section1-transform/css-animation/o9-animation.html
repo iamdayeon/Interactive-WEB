@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgb(160, 155, 155);
+        }
+        @keyframes o9move_ani{
+            to { background-position: -1800px 0; }
+        }
+        .o9move{
+            width: 150px;
+            height: 150px;
+            background-image: url(o9.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 0;
+            animation: o9move_ani 1.5s infinite steps(12);
+        }
+    </style>
+</head>
+<body>
+    <div class="o9move"></div>
+</body>
+</html>
