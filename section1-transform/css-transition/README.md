@@ -2,7 +2,7 @@
 트랜지션은 CSS 프로퍼티의 값이 변화할 때, 프로퍼티 값의 변화가 일정 시간(duration)에 걸쳐 일어나도록 하는 것이다.
 
 ```
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <style>
@@ -38,18 +38,18 @@
 | transition-timing-function | 트랜지션 효과를 위한 수치 함수를 지정한다. | ease | 
 | transition-delay | 프로퍼티가 변화한 시점과 트랜지션이 실제로 시작하는 사이에 대기하는 시간을 초 단위(s) 또는 밀리 초 단위(ms)로 지정한다 | 0s | 
 | transition | 모든 트랜지션 프로퍼티를 한번에 지정한다 | (shorthand syntax) | 
-
+ 
 <br/>
 
 ## 1. transition-property
 transition-property 프로퍼티는 트랜지션의 대상이 되는 CSS 프로퍼티명을 지정한다. 지정하지 않는 경우 모든 프로퍼티가 트랜지션의 대상이 된다. 복수의 프로퍼티를 지정하는 경우 쉼표(,)로 구분한다.   
 
 <br/>
-​
+
 주의해야 할 사항은 모든 CSS 프로퍼티가 트랜지션의 대상이 될 수 없다는 것이다. 예를 들어 width, font-size, background-color 등은 하나의 범주(width, font-size는 크기, background-color는 색상)안에서 값이 변화하지만 display 프로퍼티는 그렇지 않다.   
 
 <br/>
-​
+
 트랜지션의 대상이 될 수 있는 CSS 프로퍼티는 다음과 같다.
 
 ```
@@ -124,11 +124,3 @@ transition-duration은 반드시 지정해야 한다.
 ```
 all 0 ease 0
 ```
-
-
-
-
-
-
-
-
